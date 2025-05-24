@@ -1,14 +1,21 @@
 ---
+import { featured } from '../assets/example';
+import Carrousel from '../components/Carrousel.tsx';
+import Featured from '../components/Featured.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+ 
 ---
 
 <Layout title='Blanqueria' description='Blanqueria'>
-  <h1 class="text-4xl text font-bold">Welcome to Blanqueria</h1>
-  <p>We are a company dedicated to providing the best products and services.</p>
-  <p>Explore our website to learn more about what we offer.</p>
+  
+  <article>
+    <Carrousel client:visible/>
+  </article>
+  <section class="text-center mt-20 text-4xl">
+    <h2>productos</h2>
+    <Featured featured={featured}  />
+  </section>
 
 
 </Layout>

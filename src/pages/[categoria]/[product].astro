@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { featured as products, categories } from '../../assets/example';
+
+const { categoria, product } = Astro.params;
+
+const category = categories.find(cat => cat.id === categoria);
+const producto = products.find(p => p.id === product && p.categoryId === categoria);
+
+if (!category || !producto) {
+  throw new Error('Categoría o producto no encontrado');
+}
+
+export async function getStaticPaths() {
+  return products.map(product => ({
+    params: {
+      categoria: product.categoryId,
+      product: product.id,
+    },
+  }));
+}
+---
+<Layout title={producto.title}  description={producto.description}>
+   <h1 class="text-4xl font-bold mb-4 border-b-1 border-black max-w-fit"><span class="font-normal text-lg ">Categoria:     </span>{category.title}</h1>
+
+   <div class="flex items-center justify-center mt-8">
+     <div class="flex w-fit bg-amber-50 p-8 rounded shadow-lg flex-col items-center justify-center">
+            <img  transition:name='imagen' src={producto.image} alt={producto.title}  class="w-64 h-auto mt-4" />
+  
+       <h2 class="text-2xl mb-2 self-start">{producto.title}</h2>
+       <p class="text-gray-700">{producto.description}</p>
+      
+    </div>
+   </div>
+</Layout>
