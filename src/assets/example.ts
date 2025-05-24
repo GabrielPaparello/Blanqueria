@@ -51,6 +51,21 @@ export const featured: Product[] = [
     categoryId: "ropa-de-cama",
   },
   {
+    title: "Sábanas de poliéster",
+    description: "Sábanas suaves y cómodas para un descanso perfecto.",
+    image: "/logo.png",
+    id: "sabana-poliester",
+    categoryId: "ropa-de-cama",
+  },
+  {
+    title: "Sábanas de Algodón",
+    description: "Sábanas suaves y cómodas para un descanso perfecto.",
+    image: "/logo.png",
+    id: "sabana-algodon",
+    categoryId: "ropa-de-cama",
+  },
+   
+  {
     title: "Toallas de Baño",
     description: "Toallas absorbentes y de alta calidad para tu baño.",
     image: "/logo.png",
@@ -58,10 +73,24 @@ export const featured: Product[] = [
     categoryId: "toallas",
   },
   {
+    title: "Toallas de Baño Suaves",
+    description: "Toallas absorbentes y de alta calidad para tu baño.",
+    image: "/logo.png",
+    id: "toalla-bano-suave",
+    categoryId: "toallas",
+  },
+  {
     title: "Edredones de Invierno",
     description: "Mantente abrigado con nuestros edredones de invierno.",
     image: "/logo.png",
     id: "edredon-invierno",
+    categoryId: "edredones",
+  },
+  {
+    title: "Edredones de Invierno Suaves",
+    description: "Mantente abrigado con nuestros edredones de invierno.",
+    image: "/logo.png",
+    id: "edredon-invierno-suave",
     categoryId: "edredones",
   },
   {
