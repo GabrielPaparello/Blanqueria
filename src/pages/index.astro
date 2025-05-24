@@ -3,8 +3,7 @@ import { featured } from '../assets/example';
 import Carrousel from '../components/Carrousel.tsx';
 import Featured from '../components/Featured.astro';
 import Layout from '../layouts/Layout.astro';
-
- 
+import "@fontsource/source-sans-pro"
 ---
 
 <Layout title='Blanqueria' description='Blanqueria'>
@@ -12,10 +11,13 @@ import Layout from '../layouts/Layout.astro';
   <article>
     <Carrousel client:visible/>
   </article>
-  <section class="text-center mt-20 text-4xl">
-    <h2>productos</h2>
+  <section class="text-center mt-20 ">
+    <h2 class={`font-title text-tertiary text-[100px] leading-[1.135] font-thin -mb-8 `}>Nuestros</h2>
+    <h3 class={`font-subtitle text-[40px] leading-[1.03128] font-extralight text-negro tracking-[0.2em] `}>PRODUCTOS</h3>
     <Featured featured={featured}  />
   </section>
 
 
 </Layout>
+
+  

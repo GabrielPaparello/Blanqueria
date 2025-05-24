@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import '@fontsource/herr-von-muellerhoff';
+@import '@fontsource-variable/cabin';
+@import '@fontsource/source-sans-pro';
 
 :root {
   --primero: #606c38;
@@ -8,4 +11,30 @@
   --quinto: #283618;
   --sexto: #dddfc4;
   --siete: #b8bfa7;
+  --negro: #252525;
+
+}
+
+.font-title {
+  font-family: 'Herr Von Muellerhoff', cursive;
+}
+
+.font-body {
+  font-family: cabin, sans-serif;
+}
+
+.font-subtitle {
+  font-family: 'Source Sans Pro', ;
+}
+
+@theme {
+   
+  --color-primary: var(--primero);
+  --color-secondary: var(--segundo);
+  --color-tertiary: var(--tercero);
+  --color-quaternary: var(--cuarto);
+  --color-quinary: var(--quinto);
+  --color-senary: var(--sexto);
+  --color-seventh: var(--siete);
+  --color-negro: var(--negro);
 }

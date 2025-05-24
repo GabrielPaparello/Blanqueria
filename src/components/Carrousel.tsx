@@ -17,13 +17,16 @@ export default function Carrousel() {
         disableOnInteraction: false,
       }}
       pagination={{ clickable: true }}
-      className="w-full h-84 mt-14 rounded-xl shadow-lg"
+      className="w-full h-[500px] mt-2 rounded-xl shadow-lg"
     >
       <SwiperSlide className="flex items-center justify-center bg-blue-500 text-white text-2xl font-bold">
-        <img src="https://via.placeholder.com/300x200.png?text=Slide+1" alt="Slide 1" />
+        <img src="/1.jpg" alt="Slide 1" className="object-cover object-bottom w-full h-full" />
       </SwiperSlide>
       <SwiperSlide className="flex items-center justify-center bg-green-500 text-white text-2xl font-bold">
-        Slide 2
+        <img src="/2.jpg" alt="Slide 2" />
+      </SwiperSlide>
+      <SwiperSlide className="flex items-center justify-center bg-red-500 text-white text-2xl font-bold">
+        <img src="/3.jpg" alt="Slide 3" className="object-cover object-[90%] w-full h-full" />
       </SwiperSlide>
     </Swiper>
   );

@@ -1,6 +1,7 @@
 ---
 import Button from '../components/Button.astro'
 import {MobileMenu} from '../components/MobileMenu.tsx'
+import Cart from './icons/Cart.astro'
 ---
 
 <ul class="flex items-center justify-between ">
@@ -11,11 +12,14 @@ import {MobileMenu} from '../components/MobileMenu.tsx'
 
     <MobileMenu client:media='(max-width: 768px)'   />
   </div>
-  <div class=" flex-row gap-4 hidden md:flex px-8">
-    <li><Button href="/ropa-de-cama">Ropa de Cama</Button></li>
-    <li><Button href="/toallas">Toallas</Button></li>
-    <li><Button href="/edredones">Edredones</Button></li>
-    <li><Button href="/cojines">Cojines</Button></li>
+  <div class=" flex-row gap-4 hidden md:flex px-8 ">
+    <li><Button href="/ropa-de-cama">ROPA DE CAMA</Button></li>
+    <li><Button href="/toallas">TOALLAS</Button></li>
+    <li><Button href="/edredones">EDREDONES</Button></li>
+    <li><Button href="/cojines">COJINES</Button></li>
   </div>
-  
+  <div>
+    <Cart />
+  </div>
+
 </ul>

@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
+    "@fontsource-variable/cabin": "^5.2.5",
+    "@fontsource/herr-von-muellerhoff": "^5.2.5",
+    "@fontsource/source-sans-pro": "^5.2.5",
     "@tailwindcss/vite": "^4.1.7",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
